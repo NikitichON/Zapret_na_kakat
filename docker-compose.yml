@@ -1,0 +1,8 @@
+version: '3'
+services:
+  zapret-web:
+    image: nikitichon/zapret-na-kakat:latest
+    ports:
+      - "8080:80"
+    container_name: zapret-server
+    restart: unless-stopped
